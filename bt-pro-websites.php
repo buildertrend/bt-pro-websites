@@ -12,4 +12,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Core Plugin Functionality Here
+// Include the settings page code
+require_once plugin_dir_path(__FILE__) . 'includes/admin-page.php';
+
