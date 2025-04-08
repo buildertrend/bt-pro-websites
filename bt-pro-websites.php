@@ -18,11 +18,19 @@ if (!defined('ABSPATH')) {
 require_once plugin_dir_path(__FILE__) . 'includes/admin-page.php';
 
 
-add_filter('auto_update_plugin', 'bt_force_auto_update', 10, 2);
+require plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
 
-function bt_force_auto_update($update, $item) {
-    if (isset($item->slug) && $item->slug === 'buildertrend-pro-websites') {
-        return true;  // Enable auto-updates for this plugin
-    }
-    return $update;
-}
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$updateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/buildertrend/bt-pro-websites',
+    __FILE__,
+    'bt-pro-websites'
+);
+
+// Required for private repos:
+// $updateChecker->setAuthentication('your_github_personal_access_token');
+
+// Optional if you’re using a branch other than “master” (e.g., main)
+$updateChecker->setBranch('main');
+
