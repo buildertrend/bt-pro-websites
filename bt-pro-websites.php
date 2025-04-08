@@ -2,9 +2,11 @@
 /*
 Plugin Name: Buildertrend Pro Websites
 Description: Our required plugin for sharing common functionality across our client sites. 
-Version: 1.0.2.3
+Version: 1.0.2.4
 Author: John Stuifbergen
 License: GPLv2 or later
+Plugin URI:        https://github.com/buildertrend/bt-pro-websites
+GitHub Plugin URI: https://github.com/buildertrend/bt-pro-websites
 */
 
 // Prevent direct access
