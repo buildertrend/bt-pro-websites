@@ -14,6 +14,7 @@ function bt_pro_websites_add_dashboard_widget()
 	);
 
 	// Move widget to the top of the right column
+	// default to left column
 	global $wp_meta_boxes;
 
 	// Options for $context are 'normal', 'side', or 'advanced'
