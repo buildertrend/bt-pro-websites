@@ -15,15 +15,13 @@ if (!defined('ABSPATH')) {
 }
 
 
-require_once plugin_dir_path(__FILE__) . 'includes/admin-dashboard-support-form.php';
 require_once plugin_dir_path(__FILE__) . 'includes/check-for-updates.php';
 require_once plugin_dir_path(__FILE__) . 'includes/enable-auto-updates.php';
 require_once plugin_dir_path(__FILE__) . 'includes/format-numbers.php';
 require_once plugin_dir_path(__FILE__) . 'includes/matterport.php';
 require_once plugin_dir_path(__FILE__) . 'includes/platmap.php';
-require_once plugin_dir_path(__FILE__) . 'includes/remove-dashboard-widgets.php';
-require_once plugin_dir_path(__FILE__) . 'includes/reset-dashboard-widgets.php';
 require_once plugin_dir_path(__FILE__) . 'includes/sitemap-utilities.php';
+require_once plugin_dir_path(__FILE__) . 'includes/required-plugins.php';
 
 
 // bt contcact form
